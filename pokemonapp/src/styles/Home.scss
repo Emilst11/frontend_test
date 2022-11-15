@@ -1,0 +1,43 @@
+.home{
+    width: 1440px;
+    margin: auto;
+    padding-bottom: 50px;
+    h1{
+        margin: 30px 0;
+        font-size: 1.5rem;
+        span{
+            font-weight: 400;
+        }
+    }
+    .search-box{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 2rem;
+        color: #7796E4;
+        margin-bottom: 20px;
+        input{
+            border: none;
+            font-size: 1.3rem;
+            color: #7796E4;
+            outline: none;
+            font-weight: 300;
+            font-family: Poppins;
+            border-left: 1px solid #7796E4;
+            padding-left: 10px;
+            transition: .3s;
+            &:focus{
+                border-left: 1px solid #fff;
+            }
+            &::placeholder{
+                color: #7796E4;
+                font-weight: 300;
+            }
+        }
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.5rem;
+    }
+}
